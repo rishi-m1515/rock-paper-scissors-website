@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Arial;
+  padding: 20px;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  flex-grow: 0.2;
+  background-color: rgb(18, 203, 216);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px;
+}
+
+.hr-line {
+  height: 5px;
+  background-color: rgb(15, 102, 116);
+  border: none;
+}
+
+.stats {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.player-score-part, 
+.computer-score-part,
+.result {
+  text-align: center;
+  min-width: 200px;
+  padding: 20px;
+  flex: 1;
+  background-color: rgb(15, 102, 116);
+  border-radius: 5px;
+}
+
+.result {
+  flex: 2;
+  border: none;
+  margin: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgb(86, 86, 86);
+  border-radius: 5px;
+}
+
+.player-score,
+.computer-score {
+  font-weight: bold;
+}
+
+.player-score {
+  color: rgb(0,255,0);
+}
+
+.computer-score {
+  color: rgb(255, 57, 57);
+}
+
+.title {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.player-move,
+.comp-move {
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  box-shadow: 0 1px 1px black;
+  background-color: rgb(16, 180, 192);
+}
+
+.player-content,
+.comp-content {
+  margin: 20px 0; 
+}
+
+.player-options,
+.comp-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100px;
+  column-gap: 20px;
+}
+
+.player-options button,
+.comp-options button {
+  font-size: 3rem;
+  background-color: rgba(2, 51, 55, 0.199);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 1px 3px rgb(128, 128, 128);
+  transition: background-color 0.15s;
+  transition: scale 0.1s;
+  transition: box-shadow 0.1s;
+}
+
+.player-options button:hover {
+  background-color: rgba(14, 154, 167, 0.41);
+  scale: 1.02;
+  box-shadow: 0 2px 4px rgb(128, 128, 128);
+  cursor: pointer;
+}
+
+.player-options button:disabled {
+  background-color: rgba(2, 51, 55, 0.199);
+  color: white;
+  scale: 1;
+  opacity: 1;
+  box-shadow: 0 1px 3px rgb(128, 128, 128);
+}
+
+.player-options button:active {
+  background-color: rgba(11, 121, 131, 0.41);
+  scale: 0.98;
+  box-shadow: none;
+}
+
+.credits {
+  text-align: center;
+  padding: 5px;
+  border-radius: 0 0 10px 10px;
+  color: white;
+  background-color: rgba(15, 103, 116, 0.667);
+}
